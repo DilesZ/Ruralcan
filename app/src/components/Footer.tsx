@@ -15,7 +15,7 @@ const Footer = () => {
       <PineBorder />
       <div className="flex flex-col min-h-[420px]">
         <div className="max-w-6xl mx-auto px-4 py-12 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1.4fr_1fr] gap-10 lg:gap-16 items-start">
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">Horario – Cita Previa</h4>
               <div className="flex flex-col sm:flex-row gap-6 text-sm">
