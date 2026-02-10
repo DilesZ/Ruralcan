@@ -30,8 +30,8 @@ const Footer = () => {
 
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">CONTACTO</h4>
-            <div className="flex flex-col lg:flex-row gap-6">
-              <div className="space-y-4 text-sm">
+            <div className="flex flex-col xl:flex-row gap-6">
+              <div className="space-y-4 text-sm xl:w-[55%]">
                 <div className="flex items-start gap-3">
                   <img src="./wp-content/uploads/2021/06/emailicon.png" alt="Email" className="w-5 h-5 mt-0.5" />
                   <p>ruralcan@gmail.com</p>
@@ -53,12 +53,10 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="shrink-0">
+              <div className="w-full xl:w-[250px] max-w-[250px] xl:max-w-none self-start">
                 <iframe
                   title="RuralCan Google Maps"
-                  width="250"
-                  height="200"
-                  className="border-0"
+                  className="border-0 w-full h-[200px]"
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
