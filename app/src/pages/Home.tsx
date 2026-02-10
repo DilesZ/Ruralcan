@@ -45,7 +45,7 @@ const Home = () => {
             </button>
           </div>
           <div className="relative aspect-video">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="RuralCan Noticias" className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe src="https://www.youtube.com/embed/-SNUzLqgPVQ" title="RuralCan Noticias" className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           </div>
         </div>
       </section>
