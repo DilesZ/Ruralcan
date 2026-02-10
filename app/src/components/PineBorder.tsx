@@ -3,7 +3,7 @@ const PineBorder = () => {
   return (
     <div className="w-full overflow-hidden bg-[#f3feb9]">
       <div
-        className="w-full h-10"
+        className="w-full h-16"
         style={{
           backgroundImage: `url(${imageSrc})`,
           backgroundRepeat: 'repeat-x',
