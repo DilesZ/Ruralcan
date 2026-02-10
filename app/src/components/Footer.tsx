@@ -9,68 +9,94 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-[#4a7c59] border-t border-white/20">
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-white">
-          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
-            <img src="./images/logo.png" alt="RuralCan" className="w-28 h-28 object-contain" />
-            <p className="text-white/80 text-sm leading-relaxed">
-              RuralCan es un nuevo concepto de residencia canina, centro de adiestramiento y educación, ubicado en Navalón, zona interior de Valencia.
-            </p>
-            <p className="text-white/80 text-sm">Núcleo zoológico ES461180000115</p>
-          </div>
-
-          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3">
-            <h3 className="text-lg font-semibold">Contacto</h3>
-            <p className="text-white/80 text-sm">Camino de la Sierra, Navalón - Enguera (Valencia)</p>
-            <a href="tel:606616861" className="text-white/80 hover:text-white transition-colors text-sm">606 61 68 61</a>
-            <a href="mailto:ruralcan@gmail.com" className="text-white/80 hover:text-white transition-colors text-sm">ruralcan@gmail.com</a>
-            <div className="flex gap-4 pt-2">
-              <a
-                href="https://www.facebook.com/RuralCan-Residencia-Canina-Rural-416372205755934/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
-                aria-label="Facebook"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
-              </a>
-              <a
-                href="https://www.instagram.com/ruralcan_residenciacaninarural/?hl=es"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                </svg>
-              </a>
+    <footer className="w-full bg-[#2d7b30] border-t border-white/20">
+      <div className="max-w-6xl mx-auto px-4 py-12 text-white">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold">Horario – Cita Previa</h4>
+            <div className="flex flex-col sm:flex-row gap-6 text-sm">
+              <ul className="space-y-1">
+                <li>Lunes – Viernes</li>
+                <li className="text-white/80">10:00 – 13:00</li>
+                <li className="text-white/80">16:00 – 19:00</li>
+              </ul>
+              <ul className="space-y-1">
+                <li>Sabados</li>
+                <li className="text-white/80">10:00 – 13:00</li>
+                <li className="text-white/80">Domingos y Festivos Cerrado</li>
+              </ul>
             </div>
           </div>
 
-          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-3">
-            <h3 className="text-lg font-semibold">Enlaces</h3>
-            <div className="flex flex-col gap-2">
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold">CONTACTO</h4>
+            <div className="flex flex-col lg:flex-row gap-6">
+              <div className="space-y-4 text-sm">
+                <div className="flex items-start gap-3">
+                  <img src="./wp-content/uploads/2021/06/emailicon.png" alt="Email" className="w-5 h-5 mt-0.5" />
+                  <p>ruralcan@gmail.com</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <img src="./wp-content/uploads/2021/06/whatsapp.png" alt="WhatsApp" className="w-6 h-6 mt-0.5" />
+                  <p>606616861</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <img src="./wp-content/uploads/2021/06/Faceicon.png" alt="Facebook" className="w-6 h-6 mt-0.5" />
+                  <a href="https://www.facebook.com/RuralCan-Residencia-Canina-Rural-416372205755934/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    Facebook
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <img src="./wp-content/uploads/2021/06/instaicon.png" alt="Instagram" className="w-7 h-7 mt-0.5" />
+                  <a href="https://www.instagram.com/ruralcan_residenciacaninarural/?hl=es" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    Instagram
+                  </a>
+                </div>
+              </div>
+              <div className="shrink-0">
+                <iframe
+                  title="RuralCan Google Maps"
+                  width="250"
+                  height="200"
+                  className="border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.2735713233337!2d-0.952767484649039!3d38.91772417956753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6141e9f8af326d%3A0xf843159c257a34d6!2sRuralCan!5e0!3m2!1ses!2ses!4v1643501657690!5m2!1ses!2ses"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold">Sobre Nosotros</h4>
+            <ul className="space-y-2 text-sm">
               {footerLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-white/80 hover:text-white transition-colors text-sm"
-                >
-                  {link.label}
-                </a>
+                <li key={link.href}>
+                  <a href={link.href} className="hover:underline">
+                    {link.label}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
+            <a href="#/reserva-online/" className="inline-block bg-white text-[#2d7b30] px-4 py-2 rounded-sm font-semibold text-sm hover:bg-white/90 transition-colors">
+              Reserva On-Line
+            </a>
           </div>
         </div>
       </div>
 
       <div className="border-t border-white/20">
-        <div className="max-w-6xl mx-auto px-4 py-6 text-center">
-          <p className="text-white/70 text-sm">© Ruralcan, Marca Registrada © 2021 - Todos los derechos reservados</p>
+        <div className="max-w-6xl mx-auto px-4 py-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 items-center">
+            <img src="./wp-content/uploads/2021/07/Secuencia-perro-21.png" alt="RuralCan" className="w-full h-auto" />
+            <img src="./wp-content/uploads/2021/07/secuencia-perro-11.png" alt="RuralCan" className="w-full h-auto" />
+            <img src="./wp-content/uploads/2021/07/Secuencia-perro-31.png" alt="RuralCan" className="w-full h-auto" />
+            <img src="./wp-content/uploads/2021/07/Secuencia-perro-41.png" alt="RuralCan" className="w-full h-auto" />
+          </div>
+          <p className="text-white/80 text-sm text-center mt-6">
+            © Ruralcan, Marca Registrada © 2021-Todos los derechos reservados
+          </p>
         </div>
       </div>
     </footer>
