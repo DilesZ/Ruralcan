@@ -1,6 +1,15 @@
 
+import HeroCarousel, { type Slide } from '../sections/HeroCarousel';
+
+const slides: Slide[] = [
+  { id: 1, image: './wp-content/uploads/2021/06/Recuperacion-y-cuidados-especiales-dentro-con-el-texto-2048x1536.jpg', alt: 'Recuperación y cuidados especiales' },
+  { id: 2, image: './wp-content/uploads/2021/07/1625430363034-2048x1621.jpg', alt: 'Zonas tranquilas de recuperación' },
+  { id: 3, image: './wp-content/uploads/2024/05/Habitacion-estufa2.jpeg.png', alt: 'Habitaciones climatizadas' },
+];
+
 const Recuperacion = () => {
   return (<>
+      <HeroCarousel slides={slides} />
       <div className="w-full max-w-6xl mx-auto px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-[#4a7c59] mb-8 text-center">Recuperación y Cuidados Especiales</h1>
         
@@ -19,7 +28,7 @@ const Recuperacion = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1601758124096-1fd661873b95?w=600&h=400&fit=crop" alt="Cuidados especiales" className="w-full h-64 object-cover" />
+            <img src="./wp-content/uploads/2021/06/Recuperacion-y-cuidados-especiales-dentro-con-el-texto-1024x768.jpg" alt="Cuidados especiales" className="w-full h-64 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Servicios Incluidos</h3>
               <ul className="space-y-2 text-gray-700">
@@ -47,7 +56,7 @@ const Recuperacion = () => {
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=600&h=400&fit=crop" alt="Instalaciones adaptadas" className="w-full h-64 object-cover" />
+            <img src="./wp-content/uploads/2024/05/umareducida.png" alt="Instalaciones adaptadas" className="w-full h-64 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-bold text-[#4a7c59] mb-3">Instalaciones Adaptadas</h3>
               <ul className="space-y-2 text-gray-700">

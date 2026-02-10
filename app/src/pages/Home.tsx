@@ -1,68 +1,30 @@
-import { useState, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, Clock, Mail, Phone, Facebook, Instagram } from 'lucide-react';
+import { useState } from 'react';
+import { Clock, Mail, Phone, Facebook, Instagram } from 'lucide-react';
+import HeroCarousel, { type Slide } from '../sections/HeroCarousel';
 
-const slides = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&h=600&fit=crop', alt: 'Perros jugando en RuralCan' },
-  { id: 2, image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&h=600&fit=crop', alt: 'Instalaciones de RuralCan' },
-  { id: 3, image: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?w=1200&h=600&fit=crop', alt: 'Perros felices en RuralCan' },
-  { id: 4, image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1200&h=600&fit=crop', alt: 'Área de juegos de RuralCan' },
-  { id: 5, image: 'https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=1200&h=600&fit=crop', alt: 'Perros descansando en RuralCan' },
+const slides: Slide[] = [
+  { id: 1, image: './wp-content/uploads/2021/07/4.jpg', alt: 'Instalaciones de RuralCan' },
+  { id: 2, image: './wp-content/uploads/2021/07/5-1-2048x1536.jpg', alt: 'Espacios al aire libre de RuralCan' },
+  { id: 3, image: './wp-content/uploads/2021/06/3002b950-a801-47c8-802b-306d813f3006.jpg', alt: 'Zona de juego en RuralCan' },
+  { id: 4, image: './wp-content/uploads/2021/06/1623700082133-min-1-2048x1536.jpg', alt: 'Piscina para perros en RuralCan' },
+  { id: 5, image: './wp-content/uploads/2021/07/1625772157889.jpeg', alt: 'Servicio de recogida RuralCan' },
 ];
 
 const cards = [
-  { id: 1, title: 'RECUPERACIÓN Y CUIDADOS ESPECIALES', image: 'https://images.unsplash.com/photo-1601758124096-1fd661873b95?w=400&h=300&fit=crop', link: '#/recuperacion-y-cuidados-especiales/' },
-  { id: 2, title: 'CHARLAS', image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop', link: '#/charlas/' },
-  { id: 3, title: 'RURALCAN EN LA PRENSA', image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop', link: '#/video-tv-enguera/' },
-  { id: 4, title: '¿QUÉ TENGO QUE LLEVAR A RURALCAN?', image: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?w=400&h=300&fit=crop', link: '#/que-necesito-llevar-a-ruralcan/' },
-  { id: 5, title: 'CONÓCENOS', image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop', link: '#/quienes-somos/' },
-  { id: 6, title: 'HAZ TU RESERVA', image: 'https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=400&h=300&fit=crop', link: '#/reserva-online/' },
+  { id: 1, title: 'RECUPERACIÓN Y CUIDADOS ESPECIALES', image: './wp-content/uploads/2021/06/Recuperacion-y-cuidados-especiales-dentro-con-el-texto-1024x768.jpg', link: '#/recuperacion-y-cuidados-especiales/' },
+  { id: 2, title: 'CHARLAS', image: './wp-content/uploads/2021/06/Boton-charlas-y-concienciacion-870x570.jpeg', link: '#/charlas/' },
+  { id: 3, title: 'RURALCAN EN LA PRENSA', image: './wp-content/uploads/2021/06/prensa-870x570.png', link: '#/video-tv-enguera/' },
+  { id: 4, title: '¿QUÉ TENGO QUE LLEVAR A RURALCAN?', image: './wp-content/uploads/2021/07/Que-necesito-llevar-a-RuralCAn-870x570.jpg', link: '#/que-necesito-llevar-a-ruralcan/' },
+  { id: 5, title: 'CONÓCENOS', image: './wp-content/uploads/2021/07/4-1536x864.jpg', link: '#/quienes-somos/' },
+  { id: 6, title: 'HAZ TU RESERVA', image: './wp-content/uploads/2021/06/Haz-tu-reserva-870x570.jpeg', link: '#/reserva-online/' },
 ];
 
 const Home = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-
-  const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  }, []);
-
-  const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, [nextSlide]);
 
   return (
     <>
-      {/* Hero Carousel */}
-      <section className="relative w-full max-w-6xl mx-auto px-4 py-8">
-        <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-          <div className="relative h-[300px] md:h-[500px]">
-            {slides.map((slide, index) => (
-              <div
-                key={slide.id}
-                className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
-              >
-                <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-          <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-2 rounded-full transition-colors" aria-label="Previous slide">
-            <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
-          </button>
-          <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-2 rounded-full transition-colors" aria-label="Next slide">
-            <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
-          </button>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-            {slides.map((_, index) => (
-              <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-white' : 'bg-white/50'}`} aria-label={`Go to slide ${index + 1}`} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <HeroCarousel slides={slides} />
 
       {/* Video Section */}
       <section className="w-full max-w-6xl mx-auto px-4 py-8">

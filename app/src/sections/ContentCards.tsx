@@ -11,37 +11,37 @@ const cards: Card[] = [
   {
     id: 1,
     title: 'RECUPERACIÓN Y CUIDADOS ESPECIALES',
-    image: 'https://images.unsplash.com/photo-1601758124096-1fd661873b95?w=400&h=300&fit=crop',
+    image: './wp-content/uploads/2021/06/Recuperacion-y-cuidados-especiales-dentro-con-el-texto-1024x768.jpg',
     link: '/recuperacion-y-cuidados-especiales/',
   },
   {
     id: 2,
     title: 'CHARLAS',
-    image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop',
+    image: './wp-content/uploads/2021/06/Boton-charlas-y-concienciacion-870x570.jpeg',
     link: '/charlas/',
   },
   {
     id: 3,
     title: 'RURALCAN EN LA PRENSA',
-    image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop',
+    image: './wp-content/uploads/2021/06/prensa-870x570.png',
     link: '/video-tv-enguera/',
   },
   {
     id: 4,
     title: '¿QUÉ TENGO QUE LLEVAR A RURALCAN?',
-    image: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?w=400&h=300&fit=crop',
+    image: './wp-content/uploads/2021/07/Que-necesito-llevar-a-RuralCAn-870x570.jpg',
     link: '/que-necesito-llevar-a-ruralcan/',
   },
   {
     id: 5,
     title: 'CONÓCENOS',
-    image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop',
+    image: './wp-content/uploads/2021/07/4-1536x864.jpg',
     link: '/quienes-somos/',
   },
   {
     id: 6,
     title: 'HAZ TU RESERVA',
-    image: 'https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=400&h=300&fit=crop',
+    image: './wp-content/uploads/2021/06/Haz-tu-reserva-870x570.jpeg',
     link: '/reserva-online/',
   },
 ];

@@ -1,6 +1,14 @@
 
+import HeroCarousel, { type Slide } from '../sections/HeroCarousel';
+
+const slides: Slide[] = [
+  { id: 1, image: './wp-content/uploads/2021/06/Boton-charlas-y-concienciacion-870x570.jpeg', alt: 'Charlas en RuralCan' },
+  { id: 2, image: './wp-content/uploads/2021/07/hada-busca-trufa-1159x1536.jpeg', alt: 'Talleres y educación canina' },
+];
+
 const Charlas = () => {
   return (<>
+      <HeroCarousel slides={slides} />
       <div className="w-full max-w-6xl mx-auto px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-[#4a7c59] mb-8 text-center">Charlas</h1>
         
@@ -54,7 +62,7 @@ const Charlas = () => {
         </div>
 
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&h=500&fit=crop" alt="Charlas" className="w-full h-80 object-cover" />
+          <img src="./wp-content/uploads/2021/06/Boton-charlas-y-concienciacion-870x570.jpeg" alt="Charlas" className="w-full h-80 object-cover" />
         </div>
       </div>
     </>);

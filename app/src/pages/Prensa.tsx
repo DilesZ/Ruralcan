@@ -1,6 +1,14 @@
 
+import HeroCarousel, { type Slide } from '../sections/HeroCarousel';
+
+const slides: Slide[] = [
+  { id: 1, image: './wp-content/uploads/2021/06/prensa-870x570.png', alt: 'RuralCan en la prensa' },
+  { id: 2, image: './wp-content/uploads/2021/07/Captura-de-pantalla-2021-07-15-a-las-16.41.09.png', alt: 'Apariciones en medios' },
+];
+
 const Prensa = () => {
   return (<>
+      <HeroCarousel slides={slides} />
       <div className="w-full max-w-6xl mx-auto px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-[#4a7c59] mb-8 text-center">RuralCan en la Prensa</h1>
         

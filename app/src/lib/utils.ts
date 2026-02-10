@@ -7,8 +7,9 @@ export function cn(...inputs: ClassValue[]) {
 
 export function localizeWpHtml(html: string) {
   return html
-    .replaceAll("https://ruralcan.com/wp-content/", "/wp-content/")
-    .replaceAll("https://ruralcanresidencia.com/wp-content/", "/wp-content/")
+    .replaceAll("https://ruralcan.com/wp-content/", "./wp-content/")
+    .replaceAll("https://ruralcanresidencia.com/wp-content/", "./wp-content/")
+    .replaceAll("perroteléfono", "perrotele%CC%81fono")
     .replaceAll("https://ruralcan.com/", "/")
     .replaceAll("https://ruralcanresidencia.com/", "/")
 }
