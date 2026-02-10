@@ -9,7 +9,7 @@ type WpPage = {
 };
 
 const slides: Slide[] = [
-  { id: 1, image: './wp-content/uploads/2021/07/perrotele%CC%81fono.jpeg', alt: 'Contacto RuralCan' },
+  { id: 1, image: './wp-content/uploads/2021/07/4.jpg', alt: 'Contacto RuralCan' },
   { id: 2, image: './wp-content/uploads/2021/07/Captura-de-pantalla-2021-07-15-a-las-16.41.09.png', alt: 'Seguimiento por WhatsApp' },
   { id: 3, image: './wp-content/uploads/2021/07/1625772157889.jpeg', alt: 'Servicio de recogida' },
 ];
