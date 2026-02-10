@@ -1,9 +1,9 @@
 const PineBorder = () => {
   const imageSrc = `${import.meta.env.BASE_URL}images/Captura-de-pantalla-2021-06-27-a-las-16.03.12.png`;
   return (
-    <div className="w-full overflow-hidden bg-[#f5f5dc]">
+    <div className="w-full overflow-hidden bg-[#f3feb9]">
       <div
-        className="w-full h-8 md:h-10"
+        className="w-full h-[18px]"
         style={{
           backgroundImage: `url(${imageSrc})`,
           backgroundRepeat: 'repeat-x',

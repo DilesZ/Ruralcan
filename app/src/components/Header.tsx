@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="bg-[#8bc34a] text-white py-2 px-4">
+    <header className="bg-[#49bc3a] text-white py-2 px-4 font-mali">
       <div className="container mx-auto flex justify-between items-center">
         {/* Email */}
         <div className="flex items-center gap-2">

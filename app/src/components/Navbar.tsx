@@ -33,7 +33,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
 
   return (
     <nav
-      className={`bg-[#4a7c59] text-white py-4 px-4 transition-all duration-300 ${
+      className={`bg-[#2d7b30] text-white py-4 px-4 transition-all duration-300 font-mali ${
         isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''
       }`}
     >
@@ -53,8 +53,8 @@ const Navbar = ({ currentPath }: NavbarProps) => {
             <a
               key={link.href}
               href={link.href}
-              className={`nav-link text-sm font-medium tracking-wide transition-colors ${
-                isActive(link.href) ? 'text-[#8bc34a]' : 'hover:text-[#8bc34a]'
+              className={`nav-link text-sm font-semibold tracking-wide transition-colors ${
+                isActive(link.href) ? 'text-[#49bc3a]' : 'hover:text-[#49bc3a]'
               }`}
             >
               {link.label}
@@ -62,7 +62,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
           ))}
           <a
             href="#/reserva-online/"
-            className="border-2 border-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-[#4a7c59] transition-colors"
+            className="border-2 border-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-white hover:text-[#2d7b30] transition-colors"
           >
             RESERVA ON-LINE
           </a>
@@ -82,8 +82,8 @@ const Navbar = ({ currentPath }: NavbarProps) => {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium tracking-wide ${
-                  isActive(link.href) ? 'text-[#8bc34a]' : 'hover:text-[#8bc34a]'
+                className={`text-sm font-semibold tracking-wide ${
+                  isActive(link.href) ? 'text-[#49bc3a]' : 'hover:text-[#49bc3a]'
                 } transition-colors`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -92,7 +92,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
             ))}
             <a
               href="#/reserva-online/"
-              className="border-2 border-white px-4 py-2 rounded-full text-sm font-medium text-center hover:bg-white hover:text-[#4a7c59] transition-colors"
+              className="border-2 border-white px-4 py-2 rounded-full text-sm font-semibold text-center hover:bg-white hover:text-[#2d7b30] transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               RESERVA ON-LINE

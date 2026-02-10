@@ -47,6 +47,11 @@
   }
 }
 
+.font-mali {
+  font-family: 'Mali', cursive;
+  font-weight: 600;
+}
+
 /* Navigation link hover */
 .nav-link {
   position: relative;
@@ -59,7 +64,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #8bc34a;
+  background-color: #49bc3a;
   transition: width 0.3s ease;
 }
 
