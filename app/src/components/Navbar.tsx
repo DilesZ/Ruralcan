@@ -41,7 +41,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
         {/* Logo */}
         <a href="#/" className="flex items-center">
           <img
-            src="/images/logo.png"
+            src="./images/logo.png"
             alt="RuralCan"
             className="w-20 h-20 md:w-24 md:h-24 object-contain"
           />
