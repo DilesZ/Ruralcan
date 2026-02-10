@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Clock, Mail, Phone, Facebook, Instagram } from 'lucide-react';
 import HeroCarousel, { type Slide } from '../sections/HeroCarousel';
 
 const slides: Slide[] = [
@@ -74,79 +73,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Schedule Section */}
-      <section className="w-full bg-[#f5f5dc] py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Clock className="w-8 h-8 text-[#4a7c59]" />
-              <h2 className="text-2xl md:text-3xl font-bold text-[#4a7c59]">Horario – Cita Previa</h2>
-            </div>
-          </div>
-          <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="text-center md:text-left">
-                <h3 className="text-lg font-semibold text-[#4a7c59] mb-3">Lunes – Viernes</h3>
-                <div className="space-y-2 text-gray-700">
-                  <p className="text-lg">10:00 – 13:00</p>
-                  <p className="text-lg">16:00 – 19:00</p>
-                </div>
-              </div>
-              <div className="text-center md:text-left">
-                <h3 className="text-lg font-semibold text-[#4a7c59] mb-3">Sábados</h3>
-                <p className="text-lg text-gray-700">10:00 – 13:00</p>
-              </div>
-            </div>
-            <div className="mt-6 pt-6 border-t border-gray-200 text-center">
-              <h3 className="text-lg font-semibold text-red-600 mb-2">Domingos y Festivos</h3>
-              <p className="text-lg text-red-600 font-medium">Cerrado</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="w-full bg-[#4a7c59] py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-white">CONTACTO</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-              <a href="mailto:ruralcan@gmail.com" className="text-white/80 hover:text-white transition-colors">ruralcan@gmail.com</a>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
-                <Phone className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Teléfono</h3>
-              <a href="tel:606616861" className="text-white/80 hover:text-white transition-colors">606616861</a>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Redes Sociales</h3>
-              <div className="flex gap-4">
-                <a href="https://www.facebook.com/RuralCan-Residencia-Canina-Rural-416372205755934/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
-                  <Facebook className="w-5 h-5" />
-                  <span>Facebook</span>
-                </a>
-                <a href="https://www.instagram.com/ruralcan_residenciacaninarural/?hl=es" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
-                  <Instagram className="w-5 h-5" />
-                  <span>Instagram</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 };
