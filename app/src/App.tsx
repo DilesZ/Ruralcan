@@ -94,7 +94,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f5f5dc] flex flex-col">
+    <div className="min-h-screen bg-[#f3feb9] flex flex-col">
       <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#4a7c59] text-white px-4 py-2 rounded z-50">
         Ir al contenido
       </a>

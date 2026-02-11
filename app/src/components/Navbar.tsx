@@ -33,27 +33,27 @@ const Navbar = ({ currentPath }: NavbarProps) => {
 
   return (
     <nav
-      className={`bg-[#2d7b30] text-white py-4 px-4 transition-all duration-300 font-mali ${
+      className={`bg-[#2d7b30] text-white py-5 px-4 transition-all duration-300 font-mali ${
         isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="#/" className="flex items-center">
           <img
             src="./images/logo.png"
             alt="RuralCan"
-            className="w-28 h-28 md:w-32 md:h-32 object-contain"
+            className="w-32 h-32 md:w-36 md:h-36 object-contain"
           />
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-7">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`nav-link text-sm font-semibold tracking-wide transition-colors ${
+              className={`nav-link text-base font-semibold tracking-wide transition-colors ${
                 isActive(link.href) ? 'text-[#49bc3a]' : 'hover:text-[#49bc3a]'
               }`}
             >
@@ -62,7 +62,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
           ))}
           <a
             href="#/reserva-online/"
-            className="border-2 border-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-white hover:text-[#2d7b30] transition-colors"
+            className="border-2 border-white px-5 py-2.5 rounded-full text-base font-semibold hover:bg-white hover:text-[#2d7b30] transition-colors"
           >
             RESERVA ON-LINE
           </a>
@@ -101,7 +101,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
         </div>
       )}
 
-      <div className="container mx-auto mt-2">
+      <div className="max-w-6xl mx-auto mt-2">
         <p className="text-right text-xs text-white/70">Núcleo zoológico ES461180000115</p>
       </div>
     </nav>

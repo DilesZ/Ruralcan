@@ -1,9 +1,9 @@
 const Header = () => {
   return (
-    <header className="bg-[#49bc3a] text-white py-2.5 px-4 font-mali">
+    <header className="bg-[#49bc3a] text-white py-3 px-4 font-mali">
       <div className="max-w-6xl mx-auto flex items-center gap-4">
         <div className="flex items-center gap-2 flex-1">
-          <img src="./wp-content/uploads/2021/06/emailicon.png" alt="Email" className="w-5 h-5" />
+          <img src="./wp-content/uploads/2021/06/emailicon.png" alt="Email" className="w-6 h-6" />
           <a href="mailto:ruralcan@gmail.com" className="text-lg hover:underline">
             ruralcan@gmail.com
           </a>
