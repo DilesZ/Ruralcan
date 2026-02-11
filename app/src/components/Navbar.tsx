@@ -33,13 +33,13 @@ const Navbar = ({ currentPath }: NavbarProps) => {
 
   return (
     <nav
-      className={`bg-[#2d7b30] text-white px-4 transition-all duration-300 font-mali relative ${
+      className={`bg-[#2d7b30] text-white px-2 transition-all duration-300 font-mali relative ${
         isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''
       }`}
     >
-      <div className="max-w-6xl mx-auto flex justify-between items-center min-h-[120px]">
+      <div className="max-w-[1280px] mx-auto flex justify-between items-center min-h-[120px] w-full">
         {/* Logo */}
-        <a href="#/" className="flex items-center -ml-2 py-2">
+        <a href="#/" className="flex items-center -ml-4 py-2">
           <img
             src="./images/logo.png"
             alt="RuralCan"
@@ -48,7 +48,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-7 mr-2">
           {navLinks.map((link) => (
             <a
               key={link.href}
