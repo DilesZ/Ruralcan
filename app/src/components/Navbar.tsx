@@ -37,23 +37,23 @@ const Navbar = ({ currentPath }: NavbarProps) => {
         isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''
       }`}
     >
-      <div className="max-w-6xl mx-auto flex justify-between items-center min-h-[110px]">
+      <div className="max-w-6xl mx-auto flex justify-between items-center min-h-[120px]">
         {/* Logo */}
-        <a href="#/" className="flex items-center">
+        <a href="#/" className="flex items-center -ml-2 py-2">
           <img
             src="./images/logo.png"
             alt="RuralCan"
-            className="w-[110px] h-[110px] object-contain"
+            className="w-[125px] h-[125px] object-contain"
           />
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-7">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`nav-link text-sm font-semibold tracking-wide transition-colors ${
+              className={`nav-link text-base font-semibold tracking-wide transition-colors ${
                 isActive(link.href) ? 'text-[#49bc3a]' : 'hover:text-[#49bc3a]'
               }`}
             >
@@ -62,7 +62,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
           ))}
           <a
             href="#/reserva-online/"
-            className="border-2 border-white px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-white hover:text-[#2d7b30] transition-colors"
+            className="border-2 border-white px-5 py-2 rounded-full text-base font-semibold hover:bg-white hover:text-[#2d7b30] transition-colors"
           >
             RESERVA ON-LINE
           </a>
