@@ -39,7 +39,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
     >
       <div className="max-w-[1280px] mx-auto flex justify-between items-center min-h-[120px] w-full">
         {/* Logo */}
-        <a href="#/" className="flex items-center -ml-1 py-2">
+        <a href="#/" className="flex items-center -ml-3 py-2">
           <img
             src="./images/logo.png"
             alt="RuralCan"
