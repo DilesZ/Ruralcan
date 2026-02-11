@@ -54,7 +54,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
               key={link.href}
               href={link.href}
               className={`nav-link text-base font-semibold tracking-wide transition-colors ${
-                isActive(link.href) ? 'text-white nav-link-active' : 'hover:text-[#49bc3a]'
+                isActive(link.href) ? 'text-white nav-link-active' : 'hover:text-white'
               }`}
             >
               {link.label}
@@ -83,7 +83,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-semibold tracking-wide ${
-                  isActive(link.href) ? 'text-white nav-link-active' : 'hover:text-[#49bc3a]'
+                  isActive(link.href) ? 'text-white nav-link-active' : 'hover:text-white'
                 } transition-colors`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
