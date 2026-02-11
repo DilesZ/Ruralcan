@@ -33,17 +33,17 @@ const Navbar = ({ currentPath }: NavbarProps) => {
 
   return (
     <nav
-      className={`bg-[#2d7b30] text-white py-4 px-4 transition-all duration-300 font-mali ${
+      className={`bg-[#2d7b30] text-white px-4 transition-all duration-300 font-mali relative ${
         isScrolled ? 'fixed top-0 left-0 right-0 z-50 shadow-lg' : ''
       }`}
     >
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <div className="max-w-6xl mx-auto flex justify-between items-center min-h-[120px]">
         {/* Logo */}
         <a href="#/" className="flex items-center">
           <img
             src="./images/logo.png"
             alt="RuralCan"
-            className="w-30 h-30 md:w-32 md:h-32 object-contain"
+            className="w-[120px] h-[120px] object-contain"
           />
         </a>
 
@@ -101,9 +101,9 @@ const Navbar = ({ currentPath }: NavbarProps) => {
         </div>
       )}
 
-      <div className="max-w-6xl mx-auto mt-1">
-        <p className="text-right text-xs text-white/70">Núcleo zoológico ES461180000115</p>
-      </div>
+      <p className="absolute right-4 bottom-2 text-xs text-white/70">
+        Núcleo zoológico ES461180000115
+      </p>
     </nav>
   );
 };
