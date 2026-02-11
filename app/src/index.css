@@ -73,11 +73,13 @@
 }
 
 .nav-link-active::after {
-  width: 0;
+  width: 100%;
+  background-color: #49bc3a;
 }
 
 .nav-link-active:hover::after {
-  width: 0;
+  width: 100%;
+  background-color: #49bc3a;
 }
 
 /* Card hover effect */
