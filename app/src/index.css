@@ -72,6 +72,14 @@
   width: 100%;
 }
 
+.nav-link-active::after {
+  width: 0;
+}
+
+.nav-link-active:hover::after {
+  width: 0;
+}
+
 /* Card hover effect */
 .content-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;

@@ -39,7 +39,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
     >
       <div className="max-w-[1280px] mx-auto flex justify-between items-center min-h-[120px] w-full">
         {/* Logo */}
-        <a href="#/" className="flex items-center -ml-1 py-2">
+        <a href="#/" className="flex items-center ml-1 py-2">
           <img
             src="./images/logo.png"
             alt="RuralCan"
@@ -54,7 +54,9 @@ const Navbar = ({ currentPath }: NavbarProps) => {
               key={link.href}
               href={link.href}
               className={`nav-link text-base font-semibold tracking-wide transition-colors ${
-                isActive(link.href) ? 'text-[#49bc3a]' : 'hover:text-[#49bc3a]'
+                isActive(link.href)
+                  ? 'text-[#49bc3a] nav-link-active'
+                  : 'hover:text-[#49bc3a]'
               }`}
             >
               {link.label}
